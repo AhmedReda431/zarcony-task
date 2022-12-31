@@ -1,0 +1,57 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$main-color: #00105C;
+$text-color: #ef837b;
+$navLinkColor:#8D8D8F;
+$activeLink:#00105C;
+$gray:#8D8D8F;
+$thin:#8D8D8F;
+$social-color:#00105C;
+$green-thin:#124651;
+
+$nav-color : #E2FDFF;
+
+$main-bg_color: #11322c79;
+
+$font-size: 1.1rem !default;
+$body-text: #666666 !default;
+$font-family: "Founders" !default;
+$second-font-family: "Poppins" !default;
+$dark-text: #333333 !default;
+$light-text: #999999 !default;
+$edit-color:#00105C;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$breakpoints: (
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xlst: 1920px,
+);
+
+$max-breakpoints: (
+  xs: 479px,
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+  xxl: 1599px,
+);
+
+$print-body-min-width: map-get($grid-breakpoints, "lg") !default;

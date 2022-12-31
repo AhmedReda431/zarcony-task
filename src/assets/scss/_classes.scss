@@ -1,0 +1,170 @@
+.text-gray {
+  color: $gray;
+}
+.text-thin,
+.thin-text {
+  color: $thin;
+}
+.title {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 4%;
+  color: $main-color;
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+}
+.sub-title {
+  text-transform: capitalize;
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+.more-btn {
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #20303d;
+  width: 50%;
+  margin: 4% 0;
+  border: none;
+
+  //new edit
+
+  position: relative;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+  &::after , &::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+  &::after{
+    bottom: 5px;
+    right: 11px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+    -webkit-transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+    -moz-transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+    -ms-transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+    -o-transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+  &::before{
+    top: 5px;
+    left: 16px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+    -webkit-transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+    -moz-transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+    -ms-transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+    -o-transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+  &:hover{
+    animation: pulse 2s ease-out .4s;
+    color: #fff;
+    -webkit-animation: pulse 2s ease-out .4s;
+}
+ &:hover::before{
+    width: calc(100% + -27px);
+    height: calc(100% + -10px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -webkit-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -moz-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -ms-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -o-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+  &:hover::after{
+    width: calc(100% + -27px);
+    height: calc(100% + -10px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -webkit-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -moz-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -ms-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -o-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+  &:hover::after{
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -webkit-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -moz-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -ms-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    -o-transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+  &:hover::before{
+    transition: width .1s ease, height .1s ease .1s;
+    -webkit-transition: width .1s ease, height .1s ease .1s;
+    -moz-transition: width .1s ease, height .1s ease .1s;
+    -ms-transition: width .1s ease, height .1s ease .1s;
+    -o-transition: width .1s ease, height .1s ease .1s;
+}
+}
+section.large-padding,
+section.larg-padding {
+  padding: 7% 0;
+  margin: 2% 0 0 0;
+}
+
+.intro {
+  width: 75%;
+}
+
+.side-col-image {
+  height: 400px;
+  // object-fit: cover;
+  width: 100%;
+}
+
+.aligned-together {
+  justify-content: center;
+  align-items: center;
+}
+.bold {
+  font-weight: bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.blue-a {
+  color: #5ab4ae;
+}
+
+.edit-color {
+  color: $edit-color;
+}
+.edit-color-back {
+  background-color: $edit-color;
+  color: #fff;
+}
+// .italic {
+//   font-style: italic;
+// }
+.footer-p {
+  color: #123832;
+}
+.logo{
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.main-color{
+  color: $main-color;
+}
+
+.barIcon{
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
